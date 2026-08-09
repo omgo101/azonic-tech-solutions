@@ -51,86 +51,109 @@ a:hover {
   color: #00b4d8 !important;            /* Force cyan */
 }
 
-/* ---------- HERO SECTION ---------- */
+/* ---------- HERO SECTION (updated for better image/text balance) ---------- */
 .hero-section {
-  background: linear-gradient(135deg, #0a0f1e 0%, #1a2a40 100%);  /* Dark gradient */
-  color: #fff;                          /* White text on dark background */
-  min-height: 90vh;                     /* Nearly full viewport height */
-  padding-top: 120px;                   /* Offset for fixed header – NO white gap */
-  padding-bottom: 60px;
+  background: linear-gradient(135deg, #0a0f1e 0%, #1a2a40 100%);
+  color: #fff;
+  min-height: 100vh;                    /* Full height for dramatic effect */
+  padding-top: 100px;
+  padding-bottom: 80px;
   display: flex;
-  align-items: center;                  /* Vertically centre content */
+  align-items: center;
 }
 
 .hero-title {
-  font-size: 3rem;                      /* Very large heading */
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
   color: #fff;
 }
 .hero-title span {
-  color: #00b4d8;                       /* Cyan highlight */
+  color: #00b4d8;
 }
 
 .hero-subtitle {
-  font-size: 1.2rem;                    /* Slightly larger than body text */
-  opacity: 0.9;                         /* Slight transparency for subtle effect */
+  font-size: 1.2rem;
+  opacity: 0.9;
   margin: 20px 0;
+}
+
+/* Buttons container – always flex, wraps nicely on mobile */
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;                            /* Even spacing between buttons */
+  justify-content: center;              /* Centre on mobile */
+}
+/* On desktop, align left */
+@media (min-width: 992px) {
+  .hero-buttons {
+    justify-content: flex-start;
+  }
 }
 
 /* Primary button (Request Service) */
 .hero-section .btn-primary {
-  background: #00b4d8;                  /* Cyan background */
+  background: #00b4d8;
   border: none;
-  padding: 12px 30px;                   /* Big clickable area */
+  padding: 12px 30px;
   font-weight: 600;
-  border-radius: 30px;                  /* Rounded pill */
-  transition: 0.3s;                     /* Smooth hover effect */
+  border-radius: 30px;
+  transition: 0.3s;
 }
 .hero-section .btn-primary:hover {
-  background: #0096c7;                  /* Darker on hover */
+  background: #0096c7;
 }
 
 /* Outline button (Call Now) */
 .hero-section .btn-outline-light {
-  border: 2px solid rgba(255,255,255,0.5);  /* Semi‑transparent white border */
+  border: 2px solid rgba(255,255,255,0.5);
   color: #fff;
   font-weight: 600;
   border-radius: 30px;
   padding: 12px 30px;
 }
 .hero-section .btn-outline-light:hover {
-  background: rgba(255,255,255,0.1);    /* Light overlay */
-  border-color: #fff;                   /* Full white border */
+  background: rgba(255,255,255,0.1);
+  border-color: #fff;
+}
+
+/* Hero image – now nicely proportioned and paired with text */
+.hero-img-col img {
+  width: 100%;
+  max-height: 500px;                    /* Keep image from getting too tall */
+  object-fit: cover;                    /* Fill the space nicely */
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
 }
 
 /* ---------- SERVICE CARDS ---------- */
 .service-card {
-  background: #fff;                     /* White card */
+  background: #fff;
   padding: 30px 25px;
-  border-radius: 12px;                  /* Soft rounded corners */
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);  /* Subtle shadow */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   transition: 0.3s;
-  height: 100%;                         /* Fill column height */
+  height: 100%;
   text-align: center;
   border: 1px solid rgba(0,0,0,0.05);
 }
 
 .service-card:hover {
-  transform: translateY(-8px);          /* Lift card up */
-  box-shadow: 0 20px 40px rgba(0,180,216,0.15);  /* Cyan-tinted shadow */
-  border-color: #00b4d8;                /* Cyan border appears */
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,180,216,0.15);
+  border-color: #00b4d8;
 }
 
 .service-icon {
   width: 70px;
   height: 70px;
-  background: rgba(0,180,216,0.1);      /* Light cyan circle */
-  border-radius: 50%;                   /* Perfect circle */
+  background: rgba(0,180,216,0.1);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 20px;                  /* Centered with bottom margin */
+  margin: 0 auto 20px;
   font-size: 2rem;
   color: #00b4d8;
 }
@@ -139,37 +162,37 @@ a:hover {
   font-size: 1.3rem;
   margin-bottom: 10px;
   font-weight: 600;
-  color: #0a0f1e;                       /* Dark navy heading */
+  color: #0a0f1e;
 }
 
 .service-card p {
-  color: #666;                          /* Grey text */
+  color: #666;
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
 /* ---------- ABOUT SECTION ---------- */
 #about h2 span {
-  color: #00b4d8;                       /* Cyan highlight */
+  color: #00b4d8;
 }
 #about li i {
-  color: #00b4d8;                       /* Cyan check icons */
+  color: #00b4d8;
 }
 
 /* ---------- CONTACT FORM ---------- */
 #contact .form-control {
-  border: 1px solid #ddd;               /* Light border */
+  border: 1px solid #ddd;
   padding: 10px 15px;
-  border-radius: 8px;                   /* Slightly rounded */
+  border-radius: 8px;
   transition: 0.3s;
 }
 #contact .form-control:focus {
-  border-color: #00b4d8;                /* Cyan border on focus */
-  box-shadow: 0 0 0 0.2rem rgba(0,180,216,0.15);  /* Cyan glow */
+  border-color: #00b4d8;
+  box-shadow: 0 0 0 0.2rem rgba(0,180,216,0.15);
 }
 
 #contact .btn-primary {
-  background: #00b4d8;                  /* Cyan button */
+  background: #00b4d8;
   border: none;
   font-weight: 600;
   padding: 12px;
@@ -179,12 +202,58 @@ a:hover {
   background: #0096c7;
 }
 
+/* ---------- WHATSAPP FLOATING BUTTON ---------- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;            /* Official WhatsApp green */
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: pulse 2s infinite;         /* Subtle pulse to draw attention */
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+/* Simple pulse animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
 /* ---------- RESPONSIVE ADJUSTMENTS (mobile) ---------- */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2.2rem;                  /* Smaller title for phones */
+    font-size: 2.2rem;
   }
   .section-padding {
-    padding: 50px 0;                    /* Reduce padding */
+    padding: 50px 0;
+  }
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.6rem;
   }
 }
