@@ -1,451 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Arsha Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azonic Tech Solution – Computer Repair, Networking, CCTV, AMC in Panjim, Goa</title>
+  <meta name="description" content="Professional laptop & computer repairs, software solutions, networking, CCTV, biometric attendance, annual maintenance contracts in Panjim, Goa. Call now!">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Google Fonts (Orbitron for logo) -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File (only homepage styles) -->
+  <!-- Homepage CSS (only page-specific styles) -->
   <link href="indexcss.css" rel="stylesheet">
 </head>
+<body>
 
-<body class="index-page">
+  <!-- ===== HEADER WILL BE LOADED HERE ===== -->
+  <div id="header-container"></div>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <h1 class="sitename">Arsha</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <a class="btn-getstarted" href="#about">Get Started</a>
-
-    </div>
-  </header><!-- End Header -->
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+  <main>
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="hero-section d-flex align-items-center">
       <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <h1>Better Solutions For Your Business</h1>
-            <p>We are team of talented designers making websites with Bootstrap</p>
-            <div class="d-flex">
-              <a href="#about" class="btn-get-started">Get Started</a>
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="hero-title">Fast & Reliable <span>Tech Solutions</span> in Panjim, Goa</h1>
+            <p class="hero-subtitle">Laptop & computer repair • Networking • CCTV • Biometric • AMC – One call solves it all!</p>
+            <div class="mt-4">
+              <a href="#contact" class="btn btn-primary btn-lg me-3">Request Service</a>
+              <a href="tel:+919XXXXXXXXX" class="btn btn-outline-light btn-lg"><i class="bi bi-telephone"></i> Call Now</a>
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          <div class="col-lg-6 d-none d-lg-block">
+            <img src="https://images.unsplash.com/photo-1769251971680-005dfa536f07?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Azonic Tech Team" class="img-fluid rounded-4 shadow">
           </div>
         </div>
       </div>
-    </section><!-- /Hero Section -->
+    </section>
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section light-background">
-      <div class="container" data-aos="zoom-in">
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": { "delay": 5000 },
-              "slidesPerView": "auto",
-              "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true },
-              "breakpoints": {
-                "320": { "slidesPerView": 2, "spaceBetween": 40 },
-                "480": { "slidesPerView": 3, "spaceBetween": 60 },
-                "640": { "slidesPerView": 4, "spaceBetween": 80 },
-                "992": { "slidesPerView": 5, "spaceBetween": 120 },
-                "1200": { "slidesPerView": 6, "spaceBetween": 120 }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/clients-1.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-2.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-3.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-4.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-5.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-6.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-7.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-8.webp" class="img-fluid" alt=""></div>
-          </div>
-        </div>
-      </div>
-    </section><!-- /Clients Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About Us</h2>
-      </div>
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services" class="section-padding">
       <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-            </p>
-            <ul>
-              <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo</span></li>
+        <div class="section-header text-center mb-5">
+          <h2>Our Services</h2>
+          <p>Comprehensive IT support for homes and businesses across Panjim</p>
+        </div>
+        <div class="row g-4">
+          <!-- Service cards – you'll style them in homepage.css -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon"><i class="bi bi-laptop"></i></div>
+              <h4>Computer & Laptop Repair</h4>
+              <p>Hardware & software fixes for all brands. Fast turnaround.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon"><i class="bi bi-windows"></i></div>
+              <h4>OS & Antivirus Installation</h4>
+              <p>Windows/macOS setup, virus removal, data backup.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon"><i class="bi bi-wifi"></i></div>
+              <h4>Home & Office Networking</h4>
+              <p>Structured cabling, Wi‑Fi setup, network security.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon"><i class="bi bi-calendar-check"></i></div>
+              <h4>Annual Maintenance (AMC)</h4>
+              <p>Preventive care and priority support for your entire IT infrastructure.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon"><i class="bi bi-camera-video"></i></div>
+              <h4>CCTV Installation</h4>
+              <p>Indoor/outdoor cameras with remote viewing.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon"><i class="bi bi-fingerprint"></i></div>
+              <h4>Biometric & Attendance</h4>
+              <p>Door access, time‑attendance systems for offices.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon"><i class="bi bi-printer"></i></div>
+              <h4>Printer & Scanner Repair</h4>
+              <p>All major brands – on‑site service available.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon"><i class="bi bi-gear"></i></div>
+              <h4>Custom Software Solutions</h4>
+              <p>Tailor‑made software for your business needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section-padding bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="https://via.placeholder.com/600x400?text=Our+Workshop" alt="About Azonic Tech" class="img-fluid rounded-4 shadow">
+          </div>
+          <div class="col-lg-6">
+            <h2>Why Choose <span>Azonic Tech</span>?</h2>
+            <p>With over 5 years of experience serving Panjim and surrounding areas, we deliver prompt, affordable, and reliable IT support.</p>
+            <ul class="list-unstyled mt-4">
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> Certified technicians</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> Same‑day service often available</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> Genuine spare parts</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> Affordable AMC packages</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> 30‑day service warranty</li>
             </ul>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-          </div>
         </div>
       </div>
-    </section><!-- /About Section -->
+    </section>
 
-    <!-- Why Us Section -->
-    <section id="why-us" class="section why-us light-background" data-builder="section">
-      <div class="container-fluid">
-        <div class="row gy-4">
-          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-              <h3><span>Eum ipsam laborum deleniti </span><strong>velit pariatur architecto aut nihil</strong></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            </div>
-            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
-              <div class="faq-item faq-active">
-                <h3><span>01</span> Non consectetur a erat nam at lectus urna duis?</h3>
-                <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat...</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-              <div class="faq-item">
-                <h3><span>02</span> Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit...</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-              <div class="faq-item">
-                <h3><span>03</span> Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin...</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-            <img src="assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-          </div>
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2>Contact Us</h2>
+          <p>Got a tech emergency? We’re just a call away.</p>
         </div>
-      </div>
-    </section><!-- /Why Us Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
-          <div class="col-lg-6 d-flex align-items-center">
-            <img src="assets/img/illustration/illustration-10.webp" class="img-fluid" alt="">
+          <div class="col-lg-6 mb-4">
+            <h5>Get In Touch</h5>
+            <p><i class="bi bi-geo-alt-fill text-primary"></i> Panjim, Goa, India</p>
+            <p><i class="bi bi-telephone-fill text-primary"></i> <a href="tel:+919XXXXXXXXX">+91 9XXXXXXXXX</a></p>
+            <p><i class="bi bi-envelope-fill text-primary"></i> <a href="mailto:info@azonicsolutions.com">info@azonicsolutions.com</a></p>
+            <p><i class="bi bi-clock-fill text-primary"></i> Mon‑Sat: 9:00 AM – 7:00 PM</p>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptas</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-            </p>
-            <div class="skills-content skills-animation">
-              <div class="progress">
-                <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+          <div class="col-lg-6">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required>
               </div>
-              <div class="progress">
-                <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required>
               </div>
-              <div class="progress">
-                <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Phone Number">
               </div>
-              <div class="progress">
-                <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="4" placeholder="Describe your issue..." required></textarea>
               </div>
-            </div>
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
           </div>
         </div>
       </div>
-    </section><!-- /Skills Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section light-background">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div>
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-              <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- /Services Section -->
-
-    <!-- Work Process Section -->
-    <section id="work-process" class="work-process section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Work Process</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-5">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="steps-item">
-              <div class="steps-image">
-                <img src="assets/img/steps/steps-1.webp" alt="" class="img-fluid" loading="lazy">
-              </div>
-              <div class="steps-content">
-                <div class="steps-number">01</div>
-                <h3>Research &amp; Analysis</h3>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit...</p>
-                <div class="steps-features">
-                  <div class="feature-item"><i class="bi bi-check-circle"></i><span>Market Research</span></div>
-                  <div class="feature-item"><i class="bi bi-check-circle"></i><span>Data Analysis</span></div>
-                  <div class="feature-item"><i class="bi bi-check-circle"></i><span>User Feedback</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="steps-item">
-              <div class="steps-image">
-                <img src="assets/img/steps/steps-2.webp" alt="" class="img-fluid" loading="lazy">
-              </div>
-              <div class="steps-content">
-                <div class="steps-number">02</div>
-                <h3>Design &amp; Planning</h3>
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit...</p>
-                <div class="steps-features">
-                  <div class="feature-item"><i class="bi bi-check-circle"></i><span>Wireframing</span></div>
-                  <div class="feature-item"><i class="bi bi-check-circle"></i><span>UI/UX Design</span></div>
-                  <div class="feature-item"><i class="bi bi-check-circle"></i><span>Prototyping</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="steps-item">
-              <div class="steps-image">
-                <img src="assets/img/steps/steps-3.webp" alt="" class="img-fluid" loading="lazy">
-              </div>
-              <div class="steps-content">
-                <div class="steps-number">03</div>
-                <h3>Development &amp; Launch</h3>
-                <p>Et harum quidem rerum facilis est et expedita distinctio...</p>
-                <div class="steps-features">
-                  <div class="feature-item"><i class="bi bi-check-circle"></i><span>Development</span></div>
-                  <div class="feature-item"><i class="bi bi-check-circle"></i><span>Testing</span></div>
-                  <div class="feature-item"><i class="bi bi-check-circle"></i><span>Deployment</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- /Work Process Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-      <img src="assets/img/bg/bg-8.webp" alt="">
-      <div class="container">
-        <div class="row" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-9 text-center text-xl-start">
-            <h3>Call To Action</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-          </div>
-          <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
-          </div>
-        </div>
-      </div>
-    </section><!-- /Call To Action Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div>
-      <div class="container">
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul>
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-            <!-- Portfolio items (same as original) -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/portfolio-portrait-1.webp" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-portrait-1.webp" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <!-- Add all other portfolio items here as in original (I'll shorten for brevity, but include all 9 items) -->
-            <!-- ... (include all the original portfolio items exactly as provided) ... -->
-          </div>
-        </div>
-      </div>
-    </section><!-- /Portfolio Section -->
-
-    <!-- Team Section -->
-    <section id="team" class="team section">
-      <!-- ... (include the whole team section as originally given) ... -->
     </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section light-background">
-      <!-- ... (include the whole pricing section as originally given) ... -->
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-      <!-- ... (include the whole testimonials section) ... -->
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq-2" class="faq-2 section light-background">
-      <!-- ... (include the whole faq-2 section) ... -->
-    </section>
-
-    <!-- Subscribe Section -->
-    <section id="subscribe" class="subscribe section">
-      <!-- ... (include the whole subscribe section) ... -->
-    </section>
-
-    <!-- Recent Blog Posts Section -->
-    <section id="recent-blog-postst" class="recent-blog-postst section light-background">
-      <!-- ... (include the whole blog posts section) ... -->
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <!-- ... (include the whole contact section) ... -->
-    </section>
-
   </main>
 
-  <!-- Footer -->
-  <footer id="footer" class="footer">
-    <!-- ... (include the entire footer as originally given) ... -->
-  </footer>
+  <!-- ===== FOOTER WILL BE LOADED HERE ===== -->
+  <div id="footer-container"></div>
 
-  <!-- Scroll Top Button -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- NOTE: Preloader div completely removed -->
+  <!-- Load external header and footer -->
+  <script>
+    // Load header.html
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+    // Load footer.html
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
