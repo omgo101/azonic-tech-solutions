@@ -1,136 +1,175 @@
 /* ============================================
-   homepage.css – Styles for Azonic Tech Solution
-   Sections: Hero, Services, About, Contact
+   indexcss.css
+   Styles for Azonic Tech Solution homepage
+   Colour scheme: dark navy (#0a0f1e), cyan (#00b4d8)
    ============================================ */
 
-/* ---------- GLOBAL ---------- */
+/* ---------- GLOBAL RESETS & DEFAULTS ---------- */
 body {
-  font-family: 'Inter', sans-serif;
-  color: #333;
-  margin: 0;
- 
+  font-family: 'Inter', sans-serif;     /* Clean modern font */
+  color: #444;                          /* Soft black for readability */
+  margin: 0;                            /* Remove default margin */
+  background: #fff;                     /* White page background */
 }
 
-a { color: #00b4d8; text-decoration: none; }
-a:hover { color: #0077b6; }
+a {
+  color: #00b4d8;                       /* Cyan links */
+  text-decoration: none;                /* No underline by default */
+}
+a:hover {
+  color: #0096c7;                       /* Darker cyan on hover */
+}
 
+/* Vertical padding for all sections */
 .section-padding {
-  padding: 80px 0;
+  padding: 80px 0;                      /* 80px top & bottom */
 }
 
+/* Centered section heading with decorative underline */
 .section-header h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #0a0f1e;
+  font-size: 2.5rem;                    /* Large title */
+  font-weight: 700;                     /* Bold */
+  color: #0a0f1e;                       /* Dark navy title */
+  margin-bottom: 10px;
 }
 .section-header h2 span {
-  color: #00b4d8;
+  color: #00b4d8;                       /* Cyan accent for highlighted words */
 }
 .section-header p {
-  color: #666;
-  max-width: 600px;
+  color: #666;                          /* Lighter subtitle */
+  max-width: 600px;                     /* Limit width for readability */
   margin: 0 auto;
 }
 
+/* Light grey background for alternate sections */
 .bg-light {
-  background-color: #f8f9fa;
+  background-color: #f8f9fa;            /* Very light grey */
 }
 
-/* ---------- HERO ---------- */
-.hero-section {
-  background: linear-gradient(135deg, #0a0f1e 0%, #1a2a40 100%);
-  color: #fff;
-  min-height: 90vh;
-  padding: 60px 0;
+/* Utility class for cyan text/icon colour */
+.text-cyan {
+  color: #00b4d8 !important;            /* Force cyan */
 }
+
+/* ---------- HERO SECTION ---------- */
+.hero-section {
+  background: linear-gradient(135deg, #0a0f1e 0%, #1a2a40 100%);  /* Dark gradient */
+  color: #fff;                          /* White text on dark background */
+  min-height: 90vh;                     /* Nearly full viewport height */
+  padding-top: 120px;                   /* Offset for fixed header – NO white gap */
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;                  /* Vertically centre content */
+}
+
 .hero-title {
-  font-size: 3rem;
+  font-size: 3rem;                      /* Very large heading */
   font-weight: 700;
   line-height: 1.2;
-}
-.hero-title span {
-  color: #00b4d8;
-}
-.hero-subtitle {
-  font-size: 1.2rem;
-  opacity: 0.9;
-  margin: 20px 0;
-}
-.hero-section .btn-primary {
-  background: #00b4d8;
-  border: none;
-  padding: 12px 30px;
-  font-weight: 600;
-  transition: 0.3s;
-}
-.hero-section .btn-primary:hover {
-  background: #0096c7;
-}
-.hero-section .btn-outline-light {
-  border-color: rgba(255,255,255,0.5);
   color: #fff;
 }
+.hero-title span {
+  color: #00b4d8;                       /* Cyan highlight */
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;                    /* Slightly larger than body text */
+  opacity: 0.9;                         /* Slight transparency for subtle effect */
+  margin: 20px 0;
+}
+
+/* Primary button (Request Service) */
+.hero-section .btn-primary {
+  background: #00b4d8;                  /* Cyan background */
+  border: none;
+  padding: 12px 30px;                   /* Big clickable area */
+  font-weight: 600;
+  border-radius: 30px;                  /* Rounded pill */
+  transition: 0.3s;                     /* Smooth hover effect */
+}
+.hero-section .btn-primary:hover {
+  background: #0096c7;                  /* Darker on hover */
+}
+
+/* Outline button (Call Now) */
+.hero-section .btn-outline-light {
+  border: 2px solid rgba(255,255,255,0.5);  /* Semi‑transparent white border */
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 12px 30px;
+}
 .hero-section .btn-outline-light:hover {
-  background: rgba(255,255,255,0.1);
-  border-color: #fff;
+  background: rgba(255,255,255,0.1);    /* Light overlay */
+  border-color: #fff;                   /* Full white border */
 }
 
 /* ---------- SERVICE CARDS ---------- */
 .service-card {
-  background: #fff;
+  background: #fff;                     /* White card */
   padding: 30px 25px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-radius: 12px;                  /* Soft rounded corners */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);  /* Subtle shadow */
   transition: 0.3s;
-  height: 100%;
+  height: 100%;                         /* Fill column height */
   text-align: center;
   border: 1px solid rgba(0,0,0,0.05);
 }
+
 .service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,180,216,0.15);
-  border-color: #00b4d8;
+  transform: translateY(-8px);          /* Lift card up */
+  box-shadow: 0 20px 40px rgba(0,180,216,0.15);  /* Cyan-tinted shadow */
+  border-color: #00b4d8;                /* Cyan border appears */
 }
+
 .service-icon {
   width: 70px;
   height: 70px;
-  background: rgba(0,180,216,0.1);
-  border-radius: 50%;
+  background: rgba(0,180,216,0.1);      /* Light cyan circle */
+  border-radius: 50%;                   /* Perfect circle */
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 20px;
+  margin: 0 auto 20px;                  /* Centered with bottom margin */
   font-size: 2rem;
   color: #00b4d8;
 }
+
 .service-card h4 {
   font-size: 1.3rem;
   margin-bottom: 10px;
   font-weight: 600;
+  color: #0a0f1e;                       /* Dark navy heading */
 }
+
 .service-card p {
-  color: #666;
+  color: #666;                          /* Grey text */
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
 /* ---------- ABOUT SECTION ---------- */
-#about h2 span { color: #00b4d8; }
-#about li i { color: #00b4d8; }
+#about h2 span {
+  color: #00b4d8;                       /* Cyan highlight */
+}
+#about li i {
+  color: #00b4d8;                       /* Cyan check icons */
+}
 
 /* ---------- CONTACT FORM ---------- */
 #contact .form-control {
-  border: 1px solid #ddd;
+  border: 1px solid #ddd;               /* Light border */
   padding: 10px 15px;
-  border-radius: 8px;
+  border-radius: 8px;                   /* Slightly rounded */
   transition: 0.3s;
 }
 #contact .form-control:focus {
-  border-color: #00b4d8;
-  box-shadow: 0 0 0 0.2rem rgba(0,180,216,0.15);
+  border-color: #00b4d8;                /* Cyan border on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0,180,216,0.15);  /* Cyan glow */
 }
+
 #contact .btn-primary {
-  background: #00b4d8;
+  background: #00b4d8;                  /* Cyan button */
   border: none;
   font-weight: 600;
   padding: 12px;
@@ -140,8 +179,12 @@ a:hover { color: #0077b6; }
   background: #0096c7;
 }
 
-/* ---------- RESPONSIVE ---------- */
+/* ---------- RESPONSIVE ADJUSTMENTS (mobile) ---------- */
 @media (max-width: 768px) {
-  .hero-title { font-size: 2.2rem; }
-  .section-padding { padding: 50px 0; }
+  .hero-title {
+    font-size: 2.2rem;                  /* Smaller title for phones */
+  }
+  .section-padding {
+    padding: 50px 0;                    /* Reduce padding */
+  }
 }

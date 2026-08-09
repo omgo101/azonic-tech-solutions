@@ -1,116 +1,110 @@
-<!-- header.html -->
+<!-- ============================================ -->
+<!-- header.html – Azonic Tech Solution           -->
+<!-- Fixed navigation bar with mobile toggle      -->
+<!-- ============================================ -->
 <header id="site-header" class="fixed-top">
-  <!-- Embedded Header CSS -->
   <style>
-    /* ========== HEADER STYLES ========== */
+    /* ----- Header container ----- */
     #site-header {
-      background: rgba(10, 15, 30, 0.9);
-      backdrop-filter: blur(12px);
-      padding: 12px 0;
-      transition: 0.3s;
-      z-index: 999;
-      border-bottom: 2px solid #00b4d8;
+      background: rgba(10, 15, 30, 0.95);   /* Dark navy with slight transparency */
+      backdrop-filter: blur(12px);          /* Frosted glass effect on supported browsers */
+      padding: 10px 0;                      /* Vertical spacing inside the header */
+      transition: 0.3s;                     /* Smooth changes for any future animations */
+      /* border-bottom removed – no blue line */ 
     }
-    .header-logo {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #fff;
-      text-decoration: none;
-      letter-spacing: 1px;
+
+    /* Brand / logo text */
+    .navbar-brand {
+      font-family: 'Orbitron', sans-serif;  /* Futuristic tech font */
+      font-size: 1.7rem;                    /* Large, readable size */
+      font-weight: 700;                     /* Bold */
+      color: #fff !important;               /* White text with priority */
+      letter-spacing: 1px;                  /* Slightly spaced letters */
     }
-    .header-logo span {
-      color: #00b4d8;
+    .navbar-brand span {
+      color: #00b4d8;                       /* Cyan accent for the ‘Tech’ part */
     }
-    .nav-menu ul {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
+
+    /* Navigation links */
+    .navbar-nav .nav-link {
+      color: #fff !important;               /* White text for dark background */
+      font-weight: 500;                     /* Medium weight */
+      margin-left: 20px;                    /* Space between menu items */
+      transition: 0.3s;                     /* Smooth hover effect */
     }
-    .nav-menu li {
-      margin-left: 25px;
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: #00b4d8 !important;            /* Cyan on hover or active page */
     }
-    .nav-menu a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
-      position: relative;
-    }
-    .nav-menu a:hover,
-    .nav-menu a.active {
-      color: #00b4d8;
-    }
-    .nav-menu a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: #00b4d8;
-    }
-    .header-contact-btn {
-      background: #00b4d8;
-      color: #fff;
-      padding: 8px 20px;
-      border-radius: 30px;
+
+    /* ‘Get a Quote’ call‑to‑action button */
+    .btn-header-quote {
+      background: #00b4d8;                  /* Cyan background */
+      color: #fff !important;               /* White text */
+      padding: 8px 24px;                    /* Comfortable button size */
+      border-radius: 30px;                  /* Pill shape */
       font-weight: 600;
       text-decoration: none;
       transition: 0.3s;
+      margin-left: 20px;                    /* Separate from other links */
     }
-    .header-contact-btn:hover {
-      background: #0096c7;
-      color: #fff;
+    .btn-header-quote:hover {
+      background: #0096c7;                  /* Slightly darker cyan on hover */
     }
-    /* Mobile */
-    @media (max-width: 992px) {
-      .nav-menu {
-        display: none;
+
+    /* Hamburger icon (mobile toggle) */
+    .navbar-toggler {
+      border: none;                         /* Remove default Bootstrap border */
+      color: #fff;                          /* White icon */
+      font-size: 2rem;
+      padding: 0;
+    }
+    .navbar-toggler:focus {
+      box-shadow: none;                     /* Remove focus outline for a clean look */
+    }
+
+    /* Mobile dropdown menu */
+    @media (max-width: 991px) {
+      .navbar-collapse {
+        background: rgba(10, 15, 30, 0.98); /* Slightly more opaque for readability */
+        padding: 20px;
+        border-radius: 0 0 15px 15px;       /* Rounded bottom corners */
+        margin-top: 10px;
       }
-      .mobile-toggle {
-        display: block;
-        color: #fff;
-        font-size: 28px;
-        cursor: pointer;
+      .navbar-nav .nav-link {
+        margin-left: 0;                     /* Remove left margin, stack vertically */
+        padding: 12px 0;
       }
-    }
-    @media (min-width: 992px) {
-      .mobile-toggle {
-        display: none;
+      .btn-header-quote {
+        margin-left: 0;
+        margin-top: 10px;
+        display: inline-block;
       }
     }
   </style>
 
   <div class="container">
-    <div class="d-flex justify-content-between align-items-center">
-      <!-- Logo -->
-      <a href="index.html" class="header-logo">Azonic<span>Tech</span></a>
+    <!-- Bootstrap navbar with expand on large screens -->
+    <nav class="navbar navbar-expand-lg p-0">
+      <!-- Brand logo – always visible -->
+      <a href="index.html" class="navbar-brand">Azonic<span>Tech</span></a>
 
-      <!-- Navigation -->
-      <nav class="nav-menu d-none d-lg-flex" id="main-nav">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <!-- Mobile toggle button (hamburger) – uses Bootstrap data attributes -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+        <i class="bi bi-list"></i>          <!-- Bootstrap list icon -->
+      </button>
+
+      <!-- Collapsible menu content -->
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <!-- Quote button inside the menu -->
+          <li class="nav-item"><a class="btn-header-quote" href="#contact">Get a Quote</a></li>
         </ul>
-      </nav>
-
-      <!-- CTA Button -->
-      <a href="#contact" class="header-contact-btn d-none d-lg-inline-block">Get a Quote</a>
-
-      <!-- Mobile Toggle -->
-      <i class="bi bi-list mobile-toggle" onclick="toggleMobileMenu()"></i>
-    </div>
+      </div>
+    </nav>
   </div>
 </header>
-
-<!-- Mobile menu script (minimal) -->
-<script>
-  function toggleMobileMenu() {
-    const nav = document.getElementById('main-nav');
-    nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
-  }
-</script>

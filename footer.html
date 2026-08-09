@@ -1,62 +1,78 @@
-<!-- footer.html -->
-<footer id="site-footer">
-  <!-- Embedded Footer CSS -->
+<!-- ============================================ -->
+<!-- footer.html – Azonic Tech Solution           -->
+<!-- Site footer with links and contact info      -->
+<!-- ============================================ -->
+<footer id="site-footer" class="pt-5 pb-3">
   <style>
-    /* ========== FOOTER STYLES ========== */
+    /* ----- Footer container ----- */
     #site-footer {
-      background: #0a0f1e;
-      color: #ccc;
-      padding: 60px 0 20px;
-      font-size: 0.95rem;
-      border-top: 4px solid #00b4d8;
+      background: #0a0f1e;                 /* Dark navy background */
+      color: rgba(255,255,255,0.8);        /* Slightly transparent white text */
+      font-size: 0.95rem;                  /* Comfortable reading size */
+      /* border-top removed – no blue line */
     }
-    #site-footer a {
-      color: #00b4d8;
-      text-decoration: none;
-    }
-    #site-footer a:hover {
-      color: #fff;
-    }
+
+    /* Footer headings */
     #site-footer h5 {
-      color: #fff;
+      color: #fff;                         /* Pure white for contrast */
       font-weight: 600;
       margin-bottom: 20px;
-      letter-spacing: 0.5px;
     }
+
+    /* Links inside footer */
+    #site-footer a {
+      color: #00b4d8;                      /* Cyan accent links */
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    #site-footer a:hover {
+      color: #fff;                         /* White on hover for clarity */
+    }
+
+    /* List of links/services – each item */
     .footer-links li {
-      margin-bottom: 10px;
-      list-style: none;
+      margin-bottom: 8px;                  /* Space between items */
+      list-style: none;                    /* Remove bullets */
+      display: flex;
+      align-items: center;                 /* Vertically centre icon + text */
     }
     .footer-links i {
-      margin-right: 8px;
-      color: #00b4d8;
+      margin-right: 8px;                   /* Space after icon */
+      color: #00b4d8;                      /* Cyan icons */
+      font-size: 14px;
     }
+
+    /* Social media icon circles */
     .social-icons a {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 36px;
-      height: 36px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 50%;
+      width: 38px;
+      height: 38px;
+      background: rgba(255,255,255,0.08);  /* Subtle background */
+      border-radius: 50%;                  /* Circle */
       margin-right: 10px;
+      color: #fff;
+      font-size: 1.2rem;
       transition: 0.3s;
     }
     .social-icons a:hover {
-      background: #00b4d8;
-      color: #fff;
+      background: #00b4d8;                 /* Cyan fill on hover */
+      transform: translateY(-3px);         /* Slight lift */
     }
+
+    /* Bottom bar with copyright */
     .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,0.1);
-      padding-top: 20px;
-      margin-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.1); /* Thin white line for separation */
+      margin-top: 30px;
+      padding-top: 15px;
       font-size: 0.85rem;
     }
   </style>
 
   <div class="container">
     <div class="row">
-      <!-- Company Info -->
+      <!-- Column 1: Company description -->
       <div class="col-lg-4 mb-4">
         <h5>Azonic Tech Solution</h5>
         <p>Your trusted partner for computer, laptop repairs, networking, CCTV, biometric systems, and AMC in Panjim, Goa.</p>
@@ -67,9 +83,9 @@
         </div>
       </div>
 
-      <!-- Quick Links -->
+      <!-- Column 2: Quick links -->
       <div class="col-lg-2 mb-4">
-        <h5>Quick Links</h5>
+        <h5>Links</h5>
         <ul class="footer-links list-unstyled">
           <li><i class="bi bi-chevron-right"></i><a href="#hero">Home</a></li>
           <li><i class="bi bi-chevron-right"></i><a href="#services">Services</a></li>
@@ -78,11 +94,11 @@
         </ul>
       </div>
 
-      <!-- Our Services -->
+      <!-- Column 3: Core services list -->
       <div class="col-lg-3 mb-4">
         <h5>Core Services</h5>
         <ul class="footer-links list-unstyled">
-          <li><i class="bi bi-tools"></i> Laptop & PC Repair</li>
+          <li><i class="bi bi-laptop"></i> Laptop & PC Repair</li>
           <li><i class="bi bi-wifi"></i> Networking</li>
           <li><i class="bi bi-camera-video"></i> CCTV Installation</li>
           <li><i class="bi bi-fingerprint"></i> Biometric Systems</li>
@@ -90,7 +106,7 @@
         </ul>
       </div>
 
-      <!-- Contact Info -->
+      <!-- Column 4: Contact details -->
       <div class="col-lg-3 mb-4">
         <h5>Contact Info</h5>
         <ul class="footer-links list-unstyled">
@@ -101,6 +117,7 @@
       </div>
     </div>
 
+    <!-- Copyright bar -->
     <div class="footer-bottom text-center">
       <p class="mb-0">&copy; 2026 <strong>Azonic Tech Solution</strong>. All rights reserved. | Panjim, Goa</p>
     </div>
