@@ -257,3 +257,9 @@ a:hover {
     font-size: 1.6rem;
   }
 }
+/* About image – constrained size, stays proportional */
+.about-img {
+  max-height: 450px;          /* Limits height so it doesn't overpower the text */
+  width: auto;                /* Maintain aspect ratio */
+  object-fit: contain;        /* Ensure the whole image is visible */
+}

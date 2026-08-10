@@ -6,73 +6,89 @@
   <style>
     /* ----- Header container ----- */
     #site-header {
-      background: rgba(10, 15, 30, 0.95);   /* Dark navy with slight transparency */
-      backdrop-filter: blur(12px);          /* Frosted glass effect on supported browsers */
-      padding: 10px 0;                      /* Vertical spacing inside the header */
-      transition: 0.3s;                     /* Smooth changes for any future animations */
-      /* border-bottom removed – no blue line */ 
+      background: rgba(10, 15, 30, 0.95);
+      backdrop-filter: blur(12px);
+      padding: 10px 0;
+      transition: 0.3s;
     }
 
-    /* Brand / logo text */
+    /* Brand block – stacks “AzonicTech” and “solutions” */
     .navbar-brand {
-      font-family: 'Orbitron', sans-serif;  /* Futuristic tech font */
-      font-size: 1.7rem;                    /* Large, readable size */
-      font-weight: 700;                     /* Bold */
-      color: #fff !important;               /* White text with priority */
-      letter-spacing: 1px;                  /* Slightly spaced letters */
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      color: #fff !important;
+      letter-spacing: 1px;
+      display: flex;
+      flex-direction: column;          /* Stack items vertically */
+      line-height: 1.2;
+      text-decoration: none;
     }
-    .navbar-brand span {
-      color: #00b4d8;                       /* Cyan accent for the ‘Tech’ part */
+    /* Main brand name row */
+    .brand-main {
+      font-size: 1.7rem;
+      white-space: nowrap;
+    }
+    .brand-main span {
+      color: #00b4d8;                  /* Cyan accent for ‘Tech’ */
+    }
+    /* Small “solutions” below */
+    .brand-sub {
+      font-size: 0.65rem;              /* Much smaller */
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.7); /* Lighter white */
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: -2px;               /* Slightly closer to main text */
     }
 
     /* Navigation links */
     .navbar-nav .nav-link {
-      color: #fff !important;               /* White text for dark background */
-      font-weight: 500;                     /* Medium weight */
-      margin-left: 20px;                    /* Space between menu items */
-      transition: 0.3s;                     /* Smooth hover effect */
+      color: #fff !important;
+      font-weight: 500;
+      margin-left: 20px;
+      transition: 0.3s;
     }
     .navbar-nav .nav-link:hover,
     .navbar-nav .nav-link.active {
-      color: #00b4d8 !important;            /* Cyan on hover or active page */
+      color: #00b4d8 !important;
     }
 
-    /* ‘Get a Quote’ call‑to‑action button */
+    /* ‘Get a Quote’ button */
     .btn-header-quote {
-      background: #00b4d8;                  /* Cyan background */
-      color: #fff !important;               /* White text */
-      padding: 8px 24px;                    /* Comfortable button size */
-      border-radius: 30px;                  /* Pill shape */
+      background: #00b4d8;
+      color: #fff !important;
+      padding: 8px 24px;
+      border-radius: 30px;
       font-weight: 600;
       text-decoration: none;
       transition: 0.3s;
-      margin-left: 20px;                    /* Separate from other links */
+      margin-left: 20px;
     }
     .btn-header-quote:hover {
-      background: #0096c7;                  /* Slightly darker cyan on hover */
+      background: #0096c7;
     }
 
-    /* Hamburger icon (mobile toggle) */
+    /* Hamburger icon */
     .navbar-toggler {
-      border: none;                         /* Remove default Bootstrap border */
-      color: #fff;                          /* White icon */
+      border: none;
+      color: #fff;
       font-size: 2rem;
       padding: 0;
     }
     .navbar-toggler:focus {
-      box-shadow: none;                     /* Remove focus outline for a clean look */
+      box-shadow: none;
     }
 
-    /* Mobile dropdown menu */
+    /* Mobile dropdown */
     @media (max-width: 991px) {
       .navbar-collapse {
-        background: rgba(10, 15, 30, 0.98); /* Slightly more opaque for readability */
+        background: rgba(10, 15, 30, 0.98);
         padding: 20px;
-        border-radius: 0 0 15px 15px;       /* Rounded bottom corners */
+        border-radius: 0 0 15px 15px;
         margin-top: 10px;
       }
       .navbar-nav .nav-link {
-        margin-left: 0;                     /* Remove left margin, stack vertically */
+        margin-left: 0;
         padding: 12px 0;
       }
       .btn-header-quote {
@@ -84,24 +100,25 @@
   </style>
 
   <div class="container">
-    <!-- Bootstrap navbar with expand on large screens -->
     <nav class="navbar navbar-expand-lg p-0">
-      <!-- Brand logo – always visible -->
-      <a href="index.html" class="navbar-brand">Azonic<span>Tech</span></a>
+      <!-- Brand logo – stacked layout -->
+      <a href="index.html" class="navbar-brand">
+        <div class="brand-main">Azonic<span>Tech</span></div>
+        <div class="brand-sub">solutions</div>
+      </a>
 
-      <!-- Mobile toggle button (hamburger) – uses Bootstrap data attributes -->
+      <!-- Mobile toggle button -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-        <i class="bi bi-list"></i>          <!-- Bootstrap list icon -->
+        <i class="bi bi-list"></i>
       </button>
 
-      <!-- Collapsible menu content -->
+      <!-- Menu -->
       <div class="collapse navbar-collapse" id="navbarMain">
         <ul class="navbar-nav ms-auto align-items-center">
           <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <!-- Quote button inside the menu -->
           <li class="nav-item"><a class="btn-header-quote" href="contact.html">Get a Quote</a></li>
         </ul>
       </div>
