@@ -51,7 +51,7 @@ a:hover {
 .page-hero {
   background: linear-gradient(135deg, #0a0f1e 0%, #1a2a40 100%);
   color: #fff;
-  padding: 150px 0 80px;            /* clears fixed header */
+  padding: 150px 0 80px;
   text-align: center;
 }
 .page-title {
@@ -74,8 +74,41 @@ a:hover {
   color: #00b4d8;
 }
 
-/* ---------- FOUNDER ---------- */
+/* ---------- STATS SECTION (NEW) ---------- */
+.stats-section {
+  background: #f8f9fa;
+}
+.stat-item {
+  padding: 30px 15px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+  height: 100%;
+}
+.stat-item:hover {
+  transform: translateY(-5px);
+  border-color: #00b4d8;
+  box-shadow: 0 15px 30px rgba(0,180,216,0.1);
+}
+.stat-item i {
+  font-size: 2.5rem;
+  color: #00b4d8;
+  margin-bottom: 15px;
+}
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0a0f1e;
+  line-height: 1;
+}
+.stat-label {
+  color: #666;
+  margin-top: 5px;
+  font-size: 1rem;
+}
 
+/* ---------- FOUNDER ---------- */
 .founder-section h3 {
   font-size: 2rem;
   font-weight: 700;
@@ -92,6 +125,14 @@ a:hover {
   margin: 0 auto 20px;
   color: #555;
   line-height: 1.7;
+}
+
+/* Decorative quote icon (replaces founder photo) */
+.founder-quote-icon {
+  font-size: 4rem;
+  color: #00b4d8;
+  opacity: 0.4;
+  line-height: 1;
 }
 .social-links a {
   display: inline-flex;
@@ -240,9 +281,8 @@ a:hover {
   .section-padding {
     padding: 50px 0;
   }
-  .founder-img {
-    width: 140px;
-    height: 140px;
+  .stat-number {
+    font-size: 2rem;
   }
   .whatsapp-float {
     width: 50px;

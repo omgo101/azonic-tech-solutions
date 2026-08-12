@@ -1,10 +1,15 @@
 <!-- ============================================ -->
-<!-- header.html – Azonic Tech Solution           -->
+<!-- header.html – Azonic Tech Solutions          -->
 <!-- Fixed navigation bar with mobile toggle      -->
 <!-- ============================================ -->
+
 <header id="site-header" class="fixed-top">
+
   <style>
-    /* ----- Header container ----- */
+    /* ==========================================
+       HEADER
+    ========================================== */
+
     #site-header {
       background: rgba(10, 15, 30, 0.95);
       backdrop-filter: blur(12px);
@@ -12,116 +17,278 @@
       transition: 0.3s;
     }
 
-    /* Brand block – stacks “AzonicTech” and “solutions” */
+
+    /* ==========================================
+       BRAND / LOGO
+    ========================================== */
+
     .navbar-brand {
       font-family: 'Orbitron', sans-serif;
       font-weight: 700;
       color: #fff !important;
       letter-spacing: 1px;
+
       display: flex;
-      flex-direction: column;          /* Stack items vertically */
+      flex-direction: column;
+
       line-height: 1.2;
       text-decoration: none;
+
+      align-items: center;
     }
-    /* Main brand name row */
+
+
+    /* Main text: Azonic Tech */
+
     .brand-main {
       font-size: 1.7rem;
       white-space: nowrap;
-    }
-    .brand-main span {
-      color: #00b4d8;                  /* Cyan accent for ‘Tech’ */
-    }
-    /* Small “solutions” below */
-    .brand-sub {
-      font-size: 0.65rem;              /* Much smaller */
-      font-weight: 400;
-      color: rgba(255, 255, 255, 0.7); /* Lighter white */
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-top: -2px;               /* Slightly closer to main text */
+      display: block;
+      width: max-content;
     }
 
-    /* Navigation links */
+    .brand-main span {
+      color: #00b4d8;
+    }
+
+
+    /* ==========================================
+       SOLUTIONS
+       Matches the width of "Azonic Tech"
+    ========================================== */
+
+    .brand-sub {
+      font-size: 0.58rem;
+      font-weight: 500;
+
+      color: rgba(255, 255, 255, 0.7);
+
+      text-transform: uppercase;
+
+      width: 100%;
+
+      display: flex;
+      justify-content: space-between;
+
+      margin-top: -1px;
+
+      letter-spacing: 0;
+    }
+
+
+    /* ==========================================
+       NAVIGATION LINKS
+    ========================================== */
+
     .navbar-nav .nav-link {
       color: #fff !important;
+
       font-weight: 500;
+
       margin-left: 20px;
+
       transition: 0.3s;
     }
+
     .navbar-nav .nav-link:hover,
     .navbar-nav .nav-link.active {
       color: #00b4d8 !important;
     }
 
-    /* ‘Get a Quote’ button */
+
+    /* ==========================================
+       GET A QUOTE BUTTON
+    ========================================== */
+
     .btn-header-quote {
       background: #00b4d8;
+
       color: #fff !important;
+
       padding: 8px 24px;
+
       border-radius: 30px;
+
       font-weight: 600;
+
       text-decoration: none;
+
       transition: 0.3s;
+
       margin-left: 20px;
     }
+
     .btn-header-quote:hover {
       background: #0096c7;
     }
 
-    /* Hamburger icon */
+
+    /* ==========================================
+       HAMBURGER ICON
+    ========================================== */
+
     .navbar-toggler {
       border: none;
+
       color: #fff;
+
       font-size: 2rem;
+
       padding: 0;
     }
+
     .navbar-toggler:focus {
       box-shadow: none;
     }
 
-    /* Mobile dropdown */
+
+    /* ==========================================
+       MOBILE MENU
+    ========================================== */
+
     @media (max-width: 991px) {
+
       .navbar-collapse {
         background: rgba(10, 15, 30, 0.98);
+
         padding: 20px;
+
         border-radius: 0 0 15px 15px;
+
         margin-top: 10px;
       }
+
       .navbar-nav .nav-link {
         margin-left: 0;
+
         padding: 12px 0;
       }
+
       .btn-header-quote {
         margin-left: 0;
+
         margin-top: 10px;
+
         display: inline-block;
       }
     }
+
+
+    /* ==========================================
+       SMALL MOBILE SCREENS
+    ========================================== */
+
+    @media (max-width: 576px) {
+
+      .brand-main {
+        font-size: 1.4rem;
+      }
+
+      .brand-sub {
+        font-size: 0.5rem;
+      }
+
+    }
+
   </style>
 
+
+  <!-- ==========================================
+       HEADER CONTAINER
+  =========================================== -->
+
   <div class="container">
+
     <nav class="navbar navbar-expand-lg p-0">
-      <!-- Brand logo – stacked layout -->
+
+
+      <!-- ======================================
+           BRAND LOGO
+      ======================================= -->
+
       <a href="index.html" class="navbar-brand">
-        <div class="brand-main">Azonic<span>Tech</span></div>
-        <div class="brand-sub">solutions</div>
+
+        <div class="brand-main">
+          Azonic&nbsp;<span>Tech</span>
+        </div>
+
+        <div class="brand-sub">
+          <span>S</span>
+          <span>O</span>
+          <span>L</span>
+          <span>U</span>
+          <span>T</span>
+          <span>I</span>
+          <span>O</span>
+          <span>N</span>
+          <span>S</span>
+        </div>
+
       </a>
 
-      <!-- Mobile toggle button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+
+      <!-- ======================================
+           MOBILE TOGGLE
+      ======================================= -->
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMain"
+        aria-controls="navbarMain"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+
         <i class="bi bi-list"></i>
+
       </button>
 
-      <!-- Menu -->
+
+      <!-- ======================================
+           NAVIGATION MENU
+      ======================================= -->
+
       <div class="collapse navbar-collapse" id="navbarMain">
+
         <ul class="navbar-nav ms-auto align-items-center">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="btn-header-quote" href="contact.html">Get a Quote</a></li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="service.html">
+              Services
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              About
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              Contact
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="btn-header-quote" href="contact.html">
+              Get a Quote
+            </a>
+          </li>
+
         </ul>
+
       </div>
+
     </nav>
+
   </div>
+
 </header>
